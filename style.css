@@ -23,26 +23,45 @@ border-style: outset;
 border-color: rgb(185, 185, 185);
 }
 
-.container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: rgb(0, 0, 0);
-  padding: 2px;
+
+
+
+
+
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100px;;
 }
 
+.item10 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  
+}
+
+
+
+#five{
+width:100px;
+height: 50px;
+}
+
+
+
+.container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: rgb(0, 0, 0);
+  padding: 1px;
+  width:600px;
+}
 .container div {
   background-color: #f1f1f1;
   border: 15px solid black;
-  padding: 50px;
+  padding: 25px;
   font-size: 30px;
   text-align: center;
-  width: 70px;
-}
-
-
-.item2 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  
 }
